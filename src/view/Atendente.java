@@ -32,11 +32,10 @@ public class Atendente {
 
     public void escolhaMenu(int escolha){
 
-        switch (escolha) {
-            case 1 -> estoque.gerenciarEstoque();
-            case 2 -> estoque.ListarProduto();
-            case 3 -> estoque.RemoverProduto();
-            case 0 -> System.out.println("Saindo do Sistema...");
+        switch(escolha){
+            case 1: estoque.gerenciarEstoque(); break;
+            case 2: estoque.ListarProduto(); break;
+            case 3: estoque.RemoverProduto(); break;
         }
 
     }
